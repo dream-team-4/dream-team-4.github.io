@@ -29,4 +29,4 @@ gulp.task('default', function (){
     browerSync.init({server:'./'})
     gulp.watch('scss/**/*.scss', gulp.series('sass'))
     gulp.watch('*.html').on('change',browerSync.reload)
-}) 
+})
