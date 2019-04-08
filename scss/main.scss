@@ -1,5 +1,6 @@
 $color1:#cccdce;
 $color2:#96989b;
+$color3:#363535;
 *{
     box-sizing: border-box;
 }
@@ -15,14 +16,21 @@ body{
     background-color: $color2;
 }
 .footer{
-    background-color: $color1;
+    background-color: $color3;
+    color: $color1;
     width: 100%;
     font-size: 0.75em;
     text-align: center;
+    // margin-top: 0px;
+    position: absolute;
+    position:bottom;
+
 }
 .container{
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 20px;
     .col2{
         display: flex;
         // flex-direction: column;
@@ -31,6 +39,7 @@ body{
             flex-direction: column;
             display: flex;
             width: 100%;
+           
             
 
             // justify-content: center;
@@ -38,8 +47,8 @@ body{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                background-color: $color1;
-                margin-top:1px;
+                background-color: $color3;                margin-top:1px;
+                color:$color1;
                 margin-bottom:1px; 
                 border: none;
             }
@@ -47,13 +56,25 @@ body{
     }
     .col3{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         width: 100%;
         // flex-direction: column;
-        .col10{
+        .col30{
             display: flex;
             flex-direction: column;
+
             // justify-content: center;
+                .col300{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin: 0 auto;
+            }
+            .space{
+                height: 20px;
+                width: 20px;
+            }
         }
         .squares{
             flex-direction: column;
@@ -62,7 +83,9 @@ body{
             width: 120px;
             background-color: red;
             border: 10px solid black;
-    
+        }
+        .squares:hover{
+            transform: scale(1.5);
         }
         h3{
             text-align: center;
@@ -70,6 +93,35 @@ body{
     }
     
 }
+@media screen and (min-width: 800px) {
+   .container{
+       width: 100%;
+       flex-direction: column;
+       align-items: center;
+       align-self:center;
+       
+     
 
+    .col2{
+        width: 100%;
+        flex-direction: row;
+        
+        .nav{
+            width: 100%;
+            flex-direction: row;
+            .nav-link{
+                width: calc(100%/5);
+            }
+        }
+    }
+    .col3{
+        margin-top:30px; 
+        flex-direction: row;
+    }
+   }
+  }
+  .body{
+      width:100%;
+  }
 
  
