@@ -15,8 +15,11 @@
     "browser-sync": "^2.26.3",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.2",
     "gup": "^1.1.1",
     "webpack": "^4.29.6",
     "webpack-dev-server": "^3.2.1"
