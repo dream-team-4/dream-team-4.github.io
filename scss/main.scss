@@ -1,4 +1,4 @@
-// import our _custom-variables.scss partial file
+// @import our _custom-variables.scss partial file
 // @import 'custom-variables';
 // import _bootstrap.scss partial file from the node_modules
 @import '../node_modules/bootstrap/scss/bootstrap';
@@ -14,6 +14,9 @@ body{
     margin: 0 auto;
     height: 100%;
     background-image:linear-gradient(white,lightgrey);
+    p{
+        border-bottom: 0px;
+    }
     .col2{
         display: flex;
         flex-direction: column;
@@ -43,6 +46,7 @@ body{
     text-align: center;
     margin-top: 20px;
 }
+
 
 .b{
     width: calc(99%/3);
@@ -126,14 +130,9 @@ body{
         }
     }
 }
-.col4{
-     .slide {
-        .size{
-           height:350px; 
-        }
-    }
-}
+
     .container{
+        height: 100%;
        width: 100%;
        flex-direction: column;
        align-items: center;
@@ -141,12 +140,15 @@ body{
        
    
     .col3{
-        margin-top:30px; 
-        margin-bottom: 30px;
+        margin-top: 100px;
+        margin-bottom: 100px;
     .col30{
+        height: 800px;
+      
         display: flex;
         flex-direction: column;
     .col300{
+       
         width: 100%;
         flex-direction: column;
         .squares{
@@ -161,4 +163,4 @@ flex-direction: row;
     }
  
    }
-  }
+  }☺
