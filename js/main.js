@@ -1,6 +1,6 @@
 $(document).ready(function(){
     /*easy selectors*/
-    $('p').css('border-bottom', '1px solid black')
+    $('p').css('border-bottom', '0px')
     $('.first').css('border-color','red')
     $('#special').css('background-color','#ffcc00')
     $('p.first small').css('background-color','lightgrey')
@@ -59,12 +59,12 @@ $('img').click(function(){
 
 /**ajax */
 
-// $('#content').load('./about.html')
-// $('#contentNav .nav-link').click(function(e){
-// e.preventDefault()
-// var page= $(this).attr('href')
-// $('#content').load(page)
-// })
+$('#content').load('./about.html')
+$('#contentNav .nav-link').click(function(e){
+e.preventDefault()
+var page= $(this).attr('href')
+$('#content').load(page)
+})
 
 $('#content').load('./about.html')
 $('#contentNav .nav-link').click(function(e){
@@ -79,7 +79,7 @@ $('#content').fadeOut(500, function(){
 })
 /**using local JSON file with AJAX */
 $.ajax({
-  url:'data/posts.json',
+  url:newFunction(),
   type: 'GET',
   dataType:'json'
 }).done(function(data){
@@ -100,3 +100,7 @@ AOS.init()
 
 
 })
+
+function newFunction() {
+  return 'data/posts.json';
+}

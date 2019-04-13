@@ -15027,7 +15027,7 @@ return jQuery;
 
 $(document).ready(function(){
     /*easy selectors*/
-    $('p').css('border-bottom', '1px solid black')
+    $('p').css('border-bottom', '0px')
     $('.first').css('border-color','red')
     $('#special').css('background-color','#ffcc00')
     $('p.first small').css('background-color','lightgrey')
@@ -15075,55 +15075,59 @@ $('img').toggleClass('special')
 *$('img').click(function() 
 *do something on click
  */
-// $('img').click(function(){
-//   console.log($(this).attr('src'))
-//   $(this).toggleClass('special')
-// })
-// $('img').click(function(){
-//   console.log($(this).attr('src','./img/image-5.jpg','.img'))
-//   $(this).toggleClass('special')
-// })
+$('img').click(function(){
+  console.log($(this).attr('src'))
+  $(this).toggleClass('special')
+})
+$('img').click(function(){
+  // console.log($(this).attr('src','./img/image-5.jpg','.img'))
+  $(this).toggleClass('special')
+})
 
 /**ajax */
 
-// $('#content').load('./about.html')
-// $('#contentNav .nav-link').click(function(e){
-// e.preventDefault()
-// var page= $(this).attr('href')
-// $('#content').load(page)
-// })
+$('#content').load('./about.html')
+$('#contentNav .nav-link').click(function(e){
+e.preventDefault()
+var page= $(this).attr('href')
+$('#content').load(page)
+})
 
-// $('#content').load('./about.html')
-// $('#contentNav .nav-link').click(function(e){
-// e.preventDefault()
-// var page= $(this).attr('href')
-// $('.active').removeClass('active')
-// $(this).addClass('active')
-// $('#content').fadeOut(500, function(){
-//   $(this).load(page)
-// }).fadeIn(500)
+$('#content').load('./about.html')
+$('#contentNav .nav-link').click(function(e){
+e.preventDefault()
+var page= $(this).attr('href')
+$('.active').removeClass('active')
+$(this).addClass('active')
+$('#content').fadeOut(500, function(){
+  $(this).load(page)
+}).fadeIn(500)
 
-// })
+})
 /**using local JSON file with AJAX */
-// $.ajax({
-//   url:'data/posts.json',
-//   type: 'GET',
-//   dataType:'json'
-// }).done(function(data){
-//   // var post = JSON.parse(data)
-//   console.log(data)
-//   var numPost = data.posts.lenght
-//   for(var i = 0; i<numPost; i++){
-//     var post =   '<div class="col-sm-6 p-5">';
-//     post +=(i+1)+'.'+data.posts[i].Title
-//     post += '</h3></p>'
-//     post+= data.posts[i].body
-//     post+= '</p></div>'
-//     $('#posts').append(pots)
-//   }
-// })KS
+$.ajax({
+  url:newFunction(),
+  type: 'GET',
+  dataType:'json'
+}).done(function(data){
+  // var post = JSON.parse(data)
+  console.log(data)
+  var numPost = data.posts.lenght
+  for(var i = 0; i<numPost; i++){
+    var post =   '<div class="col-sm-6 p-5">';
+    post +=(i+1)+'.'+data.posts[i].Title
+    post += '</h3></p>'
+    post+= data.posts[i].body
+    post+= '</p></div>'
+    $('#posts').append(pots)
+  }
+})
 
 AOS.init()
 
 
 })
+
+function newFunction() {
+  return 'data/posts.json';
+}
