@@ -102,6 +102,15 @@ body {
             // flex-direction: column;
             justify-content: center;
 
+            .square-team {
+                width: 480px;
+                height: 480px;
+            }
+
+            .space-team {
+                height: 20px;
+            }
+
             img {
                 width: 100%;
                 height: 200px;
@@ -142,6 +151,9 @@ body {
         align-items: center;
         align-self: center;
 
+        .col4 {
+            margin-bottom: 50px;
+        }
 
         .col3 {
             margin-top: 100px;
@@ -154,7 +166,6 @@ body {
                 flex-direction: column;
 
                 .col300 {
-
                     width: 80%;
                     flex-direction: column;
 
@@ -163,8 +174,16 @@ body {
                         flex-direction: row;
                         align-items: baseline;
 
+
                         .square {
                             width: calc(100%/5);
+                            height: 480px;
+                        }
+
+                        .square-team {
+                            width: calc(100%/3);
+                            height: 0 auto;
+
                         }
 
                         .space {
