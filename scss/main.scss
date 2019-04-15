@@ -119,6 +119,9 @@ body {
                 height: 500px;
 
                 .square {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
                     width: auto;
                     height: auto;
                 }

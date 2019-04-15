@@ -7739,6 +7739,9 @@ body {
       width: 100%;
       height: 500px; }
       .container-fluid .col2 .squares .square {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         width: auto;
         height: auto; }
   .col3 {
