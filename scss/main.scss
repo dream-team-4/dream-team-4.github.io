@@ -19,12 +19,23 @@ body {
 }
 
 .nav {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    margin: 0 auto;
+
+    a {
+        background-color: $color3;
+        color: $color1;
+
+    }
+
 }
 
 .container-fluid {
     display: flex;
     flex-direction: column;
+    width: 100;
 
     .col1 {
         display: flex;
@@ -33,6 +44,55 @@ body {
 
         .mac {
             width: 50%;
+        }
+    }
+
+    .b {
+        flex-direction: column;
+
+        .squares-b {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+
+            .square-b {
+                align-items: center;
+                width: calc(100%/2);
+
+                img {
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+        }
+    }
+
+    .d {
+        flex-direction: column;
+
+        .service {
+            width: 100%;
+        }
+
+        .squares-d {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto;
+
+            .square-d {
+                width: 100%;
+                height: auto;
+
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
         }
     }
 
@@ -63,13 +123,43 @@ body {
     }
 }
 
+.col3 {
+    margin: 0 auto;
+
+    .square-c {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 300px;
+        }
+    }
+
+}
+
 .footer {
     background-color: #363535;
     color: #cccdce;
+    width: 100%;
 }
 
 
 @media screen and (min-width: 800px) {
+    .nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto;
+        background-color: $color3;
+
+        a {
+            background-color: $color3;
+            color: $color1;
+
+        }
+
+    }
 
     .container-fluid {
         flex-direction: row;
@@ -111,6 +201,28 @@ body {
             }
         }
 
+        .d {
+            flex-direction: column;
+
+            .squares-d {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+
+
+                .square-d {
+                    width: calc(100%/2);
+
+                    img {
+                        height: 100px;
+                        width: 100px;
+                    }
+                }
+            }
+        }
+
         .col2 {
             .squares {
                 display: flex;
@@ -132,6 +244,18 @@ body {
 
 
         // end of fluid
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+
+        .container-fluid {
+            display: flex;
+            flex-direction: column;
+        }
+
     }
 
     .col3 {
