@@ -4,10 +4,16 @@
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css\main.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="./css/min/main.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,29 +22,31 @@
 </head>
 
 <body>
-<!-- container to hold the whole body and content in an organized way -->
-  <div class="container">
+  <div class="col2">
+    <nav class="nav mb-2">
+      <a class="nav-link btn btn-light active" href="#">Home</a>
+      <a class="nav-link btn btn-light" href="./about.html">About</a>
+      <a class="nav-link btn btn-light" href="./services.html">Services</a>
+      <a class="nav-link btn btn-light" href="#">Gallery</a>
+      
+      <a class="nav-link btn btn-light" href="./contact.html">Contact</a>
+    </nav>
+  </div>
+  <!-- container to hold the whole body and content in an organized way -->
+  <div class="container-fluid">
     <!--logo and search bar-->
-    <div class="col2">
-        <nav class="nav">
-            <a class="nav-link btn btn-light active" href="#">Home</a>
-            <a class="nav-link btn btn-light" href="#">Services</a>
-            <a class="nav-link btn btn-light" href="#">Gallery</a>
-            <a class="nav-link btn btn-light" href="#">About</a>
-            <a class="nav-link btn btn-light" href="./contact.html">Contact</a>
-          </nav>
-    </div>
+
     <div class="col4">
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+      <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+        <div class="carousel-inner space size">
           <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="./img/abandoned-antique-art-545008.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="./img/abstract-art-artistic-935785.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="./img/art-artistic-background-1328891.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -57,77 +65,169 @@
       <!-- content for the left side of the website -->
       <div class="col30">
         <!-- container for image -->
-        <div class="col300"></div>
+
         <!-- container or text -->
-        <h3>A bit about us</h3>
+
         <div class="col300">
-         
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quas vel dolores autem distinctio quasi, perspiciatis itaque eligendi laboriosam dicta? Aliquid inventore ex, expedita alias rerum hic ad nisi dolores!
-          Quam, laudantium reiciendis magni mollitia quibusdam assumenda ea iste atque, aspernatur ratione dolorum consectetur officia a totam, necessitatibus cupiditate dignissimos excepturi quod sequi? Impedit neque eos voluptate fugit commodi voluptas!
-          Quibusdam dolore nihil mollitia modi vero quia inventore? Ex, ullam nulla exercitationem maiores aliquam fugit doloremque dolore error mollitia ad quas accusantium eaque alias saepe aperiam cum dignissimos laborum eveniet.</p>
+          <div class="text" data-aos="fade-right">
+            <h3 class=" text-center">A bit about us</h3>
+            <p>We are a small student-based studio that is looking to gain a good name in the growing market of Ottawa.
+              All of our team members are from different areas of media and design, generating a very valuable team with
+              different assets and strengths. </p>
+            <p>We mostly specialized in Graphic design, branding guides, Photography, Web and software Production. We
+              believed that these are the most requested areas of the market and we want to provide solutions for those
+              needs</p>
+            <p>As a student-based studio we are always up for a good challenge</p>
+          </div>
+          <!-- add why to come to us -->
+          <div class="text" data-aos="fade-left">
+            <h3 class=" text-center">Why to Choose us</h3>
+            <p>The main reason why to choose us is because of our hours of research and effort to perfection our work.
+              As students, we are always researching new techniques we can implement into our working style. As well as,
+              always looking to improve our quality. </p>
+          </div>
+        </div>
+        <div class="col30">
+          <!-- divs for pictures -->
+          <div class="col300">
+            <div class="squares">
+              <div class="square" data-aos="fade-right">
+                <h3> WebDevelopment</h3>
+                <picture>
+                  <img src="./img/webdevelopment.jpg" alt="">
+                </picture>
+              </div>
+              <div class="space"></div>
+              <div class="square" data-aos="fade-up">
+                <h3>DigitalGraphics</h3>
+                <picture>
+                  <img src="./img/digitalgraphics.jpg" alt="">
+                </picture>
+              </div>
+              <div class="space"></div>
+              <div class="square" data-aos="fade-up">
+                <h3>Branding </h3>
+                <picture>
+                  <img src="./img/branding.jpg" alt="">
+                </picture>
+              </div>
+              <div class="space"></div>
+              <div class="square" data-aos="fade-up">
+                <h3>Logo Design</h3>
+                <picture>
+                  <img src="./img/Design.jpg" alt="">
+                </picture>
+              </div>
+              <div class="space"></div>
+              <div class="square" data-aos="fade-left">
+                <h3>Potography</h3>
+                <picture>
+                  <img src="./img/photo.jpg" alt="">
+                </picture>
+                <div class="description">
+                </div>
+              </div>
+            </div>
+          </div>
+
 
         </div>
       </div>
-      <div class="col30">
-        <!-- divs for pictures -->
-        <div class="col300">
-          <div class="squares">
-            <h3>service</h3>
-            <p>logo</p>
-            <picture>
-              <source source="">
-              <source>
-              <img src="" alt="" class="wow fadeInUp" data-wow-delay="0.6s">
-            </picture>
-            </div>
-            <div class="space"></div>
-            <div class="squares">
-              <h3>service</h3>
-              <p>branding guide</p>
-              <picture>
-                <source source="">
-                <source>
-                <img src="" alt="">
-              </picture>
-              </div>
+    </div>
+  </div>
+  <!-- footer tags -->
+  <!-- add more content like adress and phone number -->
+
+  <footer class="page-footer font-small blue pt-4 footer"  data-aos="fade-up">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase">Dreamy Designs</h5>
+          <p>Here you can use rows and columns here to organize your footer content.</p>
+
         </div>
-        <div class="space"></div>
-         <div class="col300">
-          <div class="squares">
-            <h3>service</h3>
-              <p>digital graphics</p>
-            <picture>
-              <p></p>
-              <source source="">
-              <source>
-              <img src="" alt="">
-            </picture>
-            </div>
-            <div class="space"></div>
-            <div class="squares">
-              <h3>service</h3>
-              <p>web design</p>
-              <picture>
-                <source source="">
-                <source>
-                <img src="" alt="">
-              </picture>
-              </div>
-         </div>
-            </div>
-        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase"></h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="./services.html">Service</a>
+              </li>
+              <li>
+                <a href="#!">Gallery</a>
+              </li>
+              <li>
+                <a href="#!">About</a>
+              </li>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">Social Media</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://www.facebook.com/"><img src="./img/facebook-icon-24.png" alt=""></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/"><img src="./img/t.png" alt=""></a>
+              </li>
+              <li>
+                <a href="https://instagram.com/"><img src="./img/ins-(1).png" alt=""></a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
       </div>
-        <!-- footer tags -->
-        <footer>
-          <div class="footer"></div>
-          <div class="footer">Copyright © Dream team. All rights reserved</div>
-          <div class="footer"></div>
-        </footer>
+      <!-- Grid row -->
 
+    </div>
+    <!-- Footer Links -->
 
-        <script type="text/javascript" src="./js/min/main.min.js"></script></body><script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-        <script>
-        new WOW().init();
-        </script>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">Copyright © Dream team. All rights reserved
+     
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+  
+  <script type="text/javascript" src="./js/dev/main.js"></script>
+  <!-- <script src="js/jquery-3.2.1min.js"></script>
+          <script src="js/aos.js"></script> -->
+</body>
 
 </html>
