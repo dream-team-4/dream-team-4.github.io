@@ -19,12 +19,23 @@ body {
 }
 
 .nav {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    margin: 0 auto;
+
+    a {
+        background-color: $color3;
+        color: $color1;
+
+    }
+
 }
 
 .container-fluid {
     display: flex;
     flex-direction: column;
+    width: 100;
 
     .col1 {
         display: flex;
@@ -33,6 +44,55 @@ body {
 
         .mac {
             width: 50%;
+        }
+    }
+
+    .b {
+        flex-direction: column;
+
+        .squares-b {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+
+            .square-b {
+                align-items: center;
+                width: calc(100%/2);
+
+                img {
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+        }
+    }
+
+    .d {
+        flex-direction: column;
+
+        .service {
+            width: 100%;
+        }
+
+        .squares-d {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto;
+
+            .square-d {
+                width: 100%;
+                height: auto;
+
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
         }
     }
 
@@ -48,10 +108,13 @@ body {
             .square {
                 width: 100%;
                 height: auto;
+<<<<<<< HEAD
             }
 
             .space-team {
                 height: 20px;
+=======
+>>>>>>> 23c2816d55ebcc6017bc6f1fdc3586b9c305d5c5
             }
 
             img {
@@ -67,23 +130,64 @@ body {
     }
 }
 
+.col3 {
+    margin: 0 auto;
+
+    .square-c {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 300px;
+        }
+    }
+
+}
+
 .footer {
     background-color: #363535;
     color: #cccdce;
+    width: 100%;
 }
 
 
 @media screen and (min-width: 800px) {
+    .nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto;
+        background-color: $color3;
+
+        a {
+            background-color: $color3;
+            color: $color1;
+
+        }
+
+    }
 
     .container-fluid {
         flex-direction: row;
         width: 100%;
+<<<<<<< HEAD
         .col1{
             .mac{
                 width: 110%;
                overflow: hidden; 
             }
         }
+=======
+
+        .col1 {
+            .mac {
+                width: 110%;
+                overflow: hidden;
+            }
+        }
+
+>>>>>>> 23c2816d55ebcc6017bc6f1fdc3586b9c305d5c5
         .col1,
         .col2 {
             width: calc(100%/2);
@@ -91,6 +195,7 @@ body {
             flex-direction: row;
             flex-wrap: nowrap;
         }
+<<<<<<< HEAD
 
         .col2 {
             .squares {
@@ -107,8 +212,92 @@ body {
         }
 
        
+=======
+
+        .b {
+            flex-direction: column;
+
+            .squares-b {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+
+
+                .square-b {
+                    width: calc(100%/2);
+
+                    img {
+                        height: 100px;
+                        width: 100px;
+                    }
+                }
+            }
+        }
+
+        .d {
+            flex-direction: column;
+
+            .squares-d {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+
+
+                .square-d {
+                    width: calc(100%/2);
+
+                    img {
+                        height: 100px;
+                        width: 100px;
+                    }
+                }
+            }
+        }
+
+        .col2 {
+            .squares {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 500px;
+
+                .square {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    width: auto;
+                    height: auto;
+                }
+
+            }
+        }
+
+
+>>>>>>> 23c2816d55ebcc6017bc6f1fdc3586b9c305d5c5
 
         // end of fluid
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+
+        .container-fluid {
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+
+    .col3 {
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
 
 }

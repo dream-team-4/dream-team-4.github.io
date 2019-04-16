@@ -7677,17 +7677,54 @@ body {
   background-image: linear-gradient(white, lightgrey); }
 
 .nav {
-  width: 100%; }
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto; }
+  .nav a {
+    background-color: #363535;
+    color: #cccdce; }
 
 .container-fluid {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 100; }
   .container-fluid .col1 {
     display: flex;
     flex-direction: column;
     width: 100%; }
     .container-fluid .col1 .mac {
       width: 50%; }
+  .container-fluid .b {
+    flex-direction: column; }
+    .container-fluid .b .squares-b {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .container-fluid .b .squares-b .square-b {
+        align-items: center;
+        width: calc(100%/2); }
+        .container-fluid .b .squares-b .square-b img {
+          height: 100px;
+          width: 100px; }
+  .container-fluid .d {
+    flex-direction: column; }
+    .container-fluid .d .service {
+      width: 100%; }
+    .container-fluid .d .squares-d {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      margin: 0 auto; }
+      .container-fluid .d .squares-d .square-d {
+        width: 100%;
+        height: auto; }
+        .container-fluid .d .squares-d .square-d img {
+          width: 300px;
+          height: 300px; }
   .container-fluid .col2 {
     display: flex;
     flex-direction: column; }
@@ -7698,19 +7735,41 @@ body {
       .container-fluid .col2 .squares .square {
         width: 100%;
         height: auto; }
+<<<<<<< HEAD
       .container-fluid .col2 .squares .space-team {
         height: 20px; }
+=======
+>>>>>>> 23c2816d55ebcc6017bc6f1fdc3586b9c305d5c5
       .container-fluid .col2 .squares img {
         width: 200px;
         height: 200px; }
       .container-fluid .col2 .squares h3 {
         text-align: center; }
 
+.col3 {
+  margin: 0 auto; }
+  .col3 .square-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .col3 .square-c img {
+      width: 300px; }
+
 .footer {
   background-color: #363535;
-  color: #cccdce; }
+  color: #cccdce;
+  width: 100%; }
 
 @media screen and (min-width: 800px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #363535; }
+    .nav a {
+      background-color: #363535;
+      color: #cccdce; }
   .container-fluid {
     flex-direction: row;
     width: 100%; }
@@ -7723,11 +7782,59 @@ body {
       height: auto;
       flex-direction: row;
       flex-wrap: nowrap; }
+<<<<<<< HEAD
+=======
+    .container-fluid .b {
+      flex-direction: column; }
+      .container-fluid .b .squares-b {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; }
+        .container-fluid .b .squares-b .square-b {
+          width: calc(100%/2); }
+          .container-fluid .b .squares-b .square-b img {
+            height: 100px;
+            width: 100px; }
+    .container-fluid .d {
+      flex-direction: column; }
+      .container-fluid .d .squares-d {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center; }
+        .container-fluid .d .squares-d .square-d {
+          width: calc(100%/2); }
+          .container-fluid .d .squares-d .square-d img {
+            height: 100px;
+            width: 100px; }
+>>>>>>> 23c2816d55ebcc6017bc6f1fdc3586b9c305d5c5
     .container-fluid .col2 .squares {
       display: flex;
       flex-wrap: wrap;
       width: 100%;
       height: 500px; }
       .container-fluid .col2 .squares .square {
+<<<<<<< HEAD
         width: auto;
         height: auto; } }
+=======
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+        height: auto; }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end; }
+    .footer .container-fluid {
+      display: flex;
+      flex-direction: column; }
+  .col3 {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center; } }
+>>>>>>> 23c2816d55ebcc6017bc6f1fdc3586b9c305d5c5
