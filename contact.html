@@ -1,0 +1,71 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  	<meta charset="UTF-8">
+  	<title>How to create the contact form using HTML and CSS</title>
+  	<link rel="stylesheet" href="./css/main.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script>
+  		$(document).ready(function(){
+  			$(".btn").click(function(){
+  			  $("input[type='text'], textarea").val("");
+  			});
+  		});
+  	</script>
+  </head>
+  <body>
+
+    
+  <div class="container">
+      <div class="col2">
+          <nav class="nav">
+              <a class="nav-link btn btn-light " href="#">Home</a>
+              <a class="nav-link btn btn-light" href="./about.html">About</a>
+              <a class="nav-link btn btn-light" href="#">Services</a>
+              <a class="nav-link btn btn-light" href="#">Gallery</a>
+              <a class="nav-link btn btn-light active" href="#">Contact</a>
+            </nav>
+      </div>
+  </div>
+    <div class="content">
+      <h1>Contact Us</h1>
+      <p>How Can We Help you Today?</p>
+    </div>
+
+    <div class="form">
+
+      <div class="top-form">
+        <div class="inner-form">
+          <div class="label">Name</div>
+          <input type="text" placeholder="herve">
+        </div>
+        <div class="inner-form">
+          <div class="label">Email</div>
+          <input type="text" placeholder="example@gmail.com">
+        </div>
+        <div class="inner-form">
+          <div class="label">Phone</div>
+          <input type="text" placeholder="1234567890">
+        </div>
+      </div>
+
+      <div class="middle-form">
+        <div class="inner-form">
+          <div class="label">Subject</div>
+          <input type="text" placeholder="subject">
+        </div>
+      </div>
+
+      <div class="bottom-form">
+        <div class="inner-form">
+          <div class="label">Message</div>
+          <textarea placeholder="your message"></textarea>
+        </div>
+      </div>
+
+      <div class="btn">Send</div>
+
+    </div>
+
+  </body>
+  </html>
