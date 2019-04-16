@@ -7735,6 +7735,8 @@ body {
       .container-fluid .col2 .squares .square {
         width: 100%;
         height: auto; }
+      .container-fluid .col2 .squares .space-team {
+        height: 20px; }
       .container-fluid .col2 .squares img {
         width: 200px;
         height: 200px; }
