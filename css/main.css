@@ -7735,11 +7735,8 @@ body {
       .container-fluid .col2 .squares .square {
         width: 100%;
         height: auto; }
-<<<<<<< HEAD
       .container-fluid .col2 .squares .space-team {
         height: 20px; }
-=======
->>>>>>> 23c2816d55ebcc6017bc6f1fdc3586b9c305d5c5
       .container-fluid .col2 .squares img {
         width: 200px;
         height: 200px; }
@@ -7782,8 +7779,6 @@ body {
       height: auto;
       flex-direction: row;
       flex-wrap: nowrap; }
-<<<<<<< HEAD
-=======
     .container-fluid .b {
       flex-direction: column; }
       .container-fluid .b .squares-b {
@@ -7809,17 +7804,12 @@ body {
           .container-fluid .d .squares-d .square-d img {
             height: 100px;
             width: 100px; }
->>>>>>> 23c2816d55ebcc6017bc6f1fdc3586b9c305d5c5
     .container-fluid .col2 .squares {
       display: flex;
       flex-wrap: wrap;
       width: 100%;
       height: 500px; }
       .container-fluid .col2 .squares .square {
-<<<<<<< HEAD
-        width: auto;
-        height: auto; } }
-=======
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -7837,4 +7827,3 @@ body {
     display: flex;
     justify-content: center;
     text-align: center; } }
->>>>>>> 23c2816d55ebcc6017bc6f1fdc3586b9c305d5c5
